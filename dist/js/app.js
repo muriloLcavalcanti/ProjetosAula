@@ -1,0 +1,1 @@
+alert("Olá, mundo! (Pra dar sorte)")
