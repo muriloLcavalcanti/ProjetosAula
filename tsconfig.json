@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/js", //endereço onde os arquivos compilados irão ser gerados 
+        "target": "ES6" // versão do JS em que o TS será convertido
+    },  
+    "include": ["app/**/*"] //localiza os arquivos TS para compilação
+}
