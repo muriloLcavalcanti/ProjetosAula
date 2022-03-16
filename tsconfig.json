@@ -2,7 +2,8 @@
     "compilerOptions": {
         "outDir": "dist/js", //endereço onde os arquivos compilados irão ser gerados 
         "target": "ES6", // versão do JS em que o TS será convertido
-        "noEmitOnError": true // impede o compilador gerar um arquivo js enquanto o ts não estiver compilando corretamente. Isso impede de gerar um JS com problemas
+        "noEmitOnError": true, // impede o compilador gerar um arquivo js enquanto o ts não estiver compilando corretamente. Isso impede de gerar um JS com problemas
+        "noImplicitAny": true   // impede o TS tipar campos implícitamente
     },  
     "include": ["app/**/*"] //localiza os arquivos TS para compilação
 }
