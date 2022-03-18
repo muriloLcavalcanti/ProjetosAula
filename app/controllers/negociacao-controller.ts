@@ -15,6 +15,12 @@ export class NegociacaoController {
 
     adiciona(): void {
         const negociacao = this.criaNegociacao();
+        // negociacao.data = new Date()    
+        /*
+            Não é possível atribuir a 'data' 
+            porque é uma propriedade de 
+            somente leitura
+        */
         this.negociacoes.adiciona(negociacao);
         console.log(this.negociacoes.lista());
         this.limparFormulario();
