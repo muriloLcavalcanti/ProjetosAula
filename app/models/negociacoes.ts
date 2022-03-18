@@ -1,10 +1,12 @@
 import { Negociacao } from './negociacao.js';
 
 export class Negociacoes {
-    private negociacoes: Negociacao[];
+    private negociacoes: Negociacao[] = []; // Faltou inicializar a tipagem do atributo!
 
-    adiciona(negocicao: Negociacao){
-        this.negociacoes.push(negocicao);
+    adiciona(negociacao: Negociacao){
+        this.negociacoes.push(negociacao);// Estava dando o seguinte erro:
+                                          // negociacoes.js:3 Uncaught TypeError: 
+                                          // Cannot read properties of undefined (reading 'push')
     }
 
     lista(): readonly Negociacao[]{ 

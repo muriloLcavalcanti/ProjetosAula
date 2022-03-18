@@ -20,7 +20,15 @@ export class NegociacaoController {
             Não é possível atribuir a 'data' 
             porque é uma propriedade de 
             somente leitura
+
+            porém a data é um objeto, e como objeto ela possuí 
+            metodos modidificadores...
+
+                 negociacao.data.setDate(12); // altera a data!
+
+            para resolver esse problema é utilizado "programação defensiva"
         */
+        
         this.negociacoes.adiciona(negociacao);
         console.log(this.negociacoes.lista());
         this.limparFormulario();
